@@ -1801,3 +1801,82 @@ div.record h2 {
     font-style: italic;
   }
 }
+
+.show #wrap {
+  width: 1080px;
+}
+
+.show #wrap #secondary {
+  display: none
+}
+
+@media screen {
+  .show #wrap #content #primary {
+    width: 100%;
+  }
+}
+
+@media screen {
+  .items #primary .item-file .download-file img,
+  .files #primary .item-file .download-file img {
+      max-height: 500px;
+  }
+}
+
+.element-set #dublin-core-title {
+  display: none;
+}
+
+.element-set #physical-object-item-type-metadata-haupttext h3 {
+  display: none;
+}
+
+.element-set #physical-object-item-type-metadata-haupttext {
+  margin-bottom: 15%;
+}
+
+/* Appr. 1 */
+
+.element {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px; /* Add spacing between rows */
+}
+
+.element h3 {
+  margin: 0; /* Remove default margin for h3 */
+  margin-right: 10px; /* Space between h3 and text */
+  width: 200px; /* Set a fixed width to align columns */
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: left; /* Align h3 text to the left */
+}
+
+.element .element-text {
+  flex-grow: 1; /* Ensure the text stretches to fill the row */
+}
+
+
+/* Appr. 2 */
+
+
+.element-set {
+  display: grid; /* Define a grid layout for the entire set */
+  row-gap: 10px; /* Add spacing between rows */
+}
+
+.element {
+  display: grid; /* Grid layout for each row */
+  grid-template-columns: 250px 1fr; /* Fixed width for column 1, flexible for column 2 */
+  align-items: center; /* Center content vertically */
+}
+
+.element h3 {
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align heading text to the left */
+}
+
+.element .element-text {
+  margin: 0; /* Remove any extra margin */
+  text-align: left; /* Align text to the left for consistency */
+}
+

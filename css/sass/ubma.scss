@@ -1,0 +1,17 @@
+#wrap {
+    width: 1080px;
+}
+
+@media screen {
+
+    .items #primary .item-file .download-file img,
+    .files #primary .item-file .download-file img {
+        max-height: 500px;
+    }
+}
+
+.element-set #dublin-core-title {
+    display: none;
+}
+
+.element-set 
