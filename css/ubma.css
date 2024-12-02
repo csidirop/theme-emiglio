@@ -38,8 +38,8 @@
   row-gap: 10px;
 }
 .items.show .element-set #physical-object-item-type-metadata-haupttext.element {
-  /* Haupttext should be exclouded */
   grid-template-columns: auto;
+  /* Haupttext shouldn't be displayed like other metadata */
   margin-bottom: 4%;
 }
 .items.show .element-set #physical-object-item-type-metadata-haupttext.element h3 {
@@ -62,6 +62,8 @@
 }
 .items.show #itemfiles {
   margin-bottom: auto;
+  height: 450px;
+  /* temp */
 }
 .items.show #itemfiles .slick-slider {
   margin-bottom: auto;
