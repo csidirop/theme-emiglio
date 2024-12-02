@@ -1,0 +1,61 @@
+/* EDITS FOR HEIMAT-RELOADED */
+/* Baseedits */
+/* Make all content wider */
+#wrap {
+  width: 1080px;
+}
+
+/* Item Show: edits */
+.items.show #secondary {
+  display: none;
+}
+
+@media screen {
+  .items.show #wrap #content #primary {
+    width: 100%;
+  }
+}
+/* Item Show: Metadaten */
+.items.show .element {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  /* Fixed width for column 1, flexible for column 2 */
+  align-items: center;
+}
+.items.show .element h3 {
+  margin: 0;
+  text-align: left;
+  align-self: start;
+  /* Align text to the top */
+}
+.items.show .element .element-text {
+  margin: 0;
+  text-align: left;
+}
+.items.show .element-set {
+  display: grid;
+  /* Define a grid layout for the entire set */
+  row-gap: 10px;
+}
+.items.show .element-set #physical-object-item-type-metadata-haupttext.element {
+  /* Haupttext should be exclouded */
+  grid-template-columns: auto;
+}
+.items.show .element-set #dublin-core-title {
+  /* We dont need the title again */
+  display: none;
+}
+.items.show .element-set #physical-object-item-type-metadata-haupttext h3 {
+  display: none;
+}
+.items.show .element-set #physical-object-item-type-metadata-haupttext {
+  margin-bottom: 10%;
+}
+
+/* Item Show: Image */
+@media screen {
+  .items #primary .item-file .download-file img,
+.files #primary .item-file .download-file img {
+    max-height: 500px;
+  }
+}
