@@ -40,20 +40,17 @@
         display: grid; /* Define a grid layout for the entire set */
         row-gap: 10px;
 
-        #physical-object-item-type-metadata-haupttext.element { /* Haupttext should be exclouded */
-            grid-template-columns: auto;
+        #physical-object-item-type-metadata-haupttext.element { 
+            grid-template-columns: auto; /* Haupttext shouldn't be displayed like other metadata */
+            margin-bottom: 4%;
+
+            h3 {
+                display: none;
+            }
         }
 
         #dublin-core-title { /* We dont need the title again */
             display: none;
-        }
-
-        #physical-object-item-type-metadata-haupttext h3 {
-            display: none;
-        }
-
-        #physical-object-item-type-metadata-haupttext {
-            margin-bottom: 10%;
         }
     }
 }
@@ -63,5 +60,19 @@
     .items #primary .item-file .download-file img,
     .files #primary .item-file .download-file img {
         max-height: 500px;
+    }
+}
+
+.items.show {
+    .desc.caption-right {
+        display: none;
+    }
+
+    #itemfiles {
+        margin-bottom: auto;
+
+        .slick-slider {
+            margin-bottom: auto;
+        }
     }
 }

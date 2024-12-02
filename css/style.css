@@ -1706,22 +1706,31 @@ div.record h2 {
   .items.show .element-set #physical-object-item-type-metadata-haupttext.element {
     /* Haupttext should be exclouded */
     grid-template-columns: auto;
+    margin-bottom: 4%;
+  }
+  .items.show .element-set #physical-object-item-type-metadata-haupttext.element h3 {
+    display: none;
   }
   .items.show .element-set #dublin-core-title {
     /* We dont need the title again */
     display: none;
-  }
-  .items.show .element-set #physical-object-item-type-metadata-haupttext h3 {
-    display: none;
-  }
-  .items.show .element-set #physical-object-item-type-metadata-haupttext {
-    margin-bottom: 10%;
   }
 }
 @media screen {
   .items #primary .item-file .download-file img,
 .files #primary .item-file .download-file img {
     max-height: 500px;
+  }
+}
+@media screen {
+  .items.show .desc.caption-right {
+    display: none;
+  }
+  .items.show #itemfiles {
+    margin-bottom: auto;
+  }
+  .items.show #itemfiles .slick-slider {
+    margin-bottom: auto;
   }
 }
 @media screen and (max-width: 844px) {
